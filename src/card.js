@@ -1,4 +1,4 @@
-class Card {
+export default class Card {
   constructor(link, name, openImageCallback, likes) {
     this.link = link;
     this.name = name;

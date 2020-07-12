@@ -12,7 +12,7 @@
 <body>
   <div class="root">
     <header class="header root__section">
-      <img src="./images/logo.svg" alt="mesto logo" class="logo">
+      <img src="<%=require('../images/logo.svg').default%>" alt="mesto logo" class="logo">
     </header>
     <div class="profile root__section">
       <div class="user-info">
@@ -26,24 +26,10 @@
       </div>
     </div>
     <div class="places-list root__section">
-      <!--
-      <div class="place-card">
-        <div class="place-card__image"
-          style="background-image: url(https://pictures.s3.yandex.net/frontend-developer/cards-compressed/kamchatka.jpg)">
-          <button class="place-card__delete-icon"></button>
-        </div>
-        <div class="place-card__description">
-          <h3 class="place-card__name">Камчатка</h3>
-          <div class="place-card__wrapper">
-            <button class="place-card__like-icon"></button>
-            <span class="place-card__like-count"></span>
-          </div>
-        </div>
-      </div> -->
     </div>
     <div class="popup card-popup">
       <div class="popup__content">
-        <img src="./images/close.svg" alt="" class="popup__close popup__close-card">
+        <img src="<%=require('../images/close.svg').default%>" alt="" class="popup__close popup__close-card">
         <h3 class="popup__title">Новое место</h3>
         <form class="popup__form form-card" name="new" novalidate>
           <input id="name-card" type="text" name="name" class="popup__input popup__input_type_name" minlength="2"
@@ -59,7 +45,7 @@
 
     <div class="popup profile-popup">
       <div class="popup__content">
-        <img src="./images/close.svg" alt="" class="popup__close popup__close-profile">
+        <img src="<%=require('../images/close.svg').default%>" alt="" class="popup__close popup__close-profile">
         <h3 class="popup__title">Редактировать профиль</h3>
         <form class="popup__form form-profile" name="edit" novalidate>
           <input id="name-edit" type="text" name="nameEdit" class="popup__input popup__input_type_name" minlength="2"
@@ -76,19 +62,11 @@
     <div class="popup image-popup">
       <div class="popup__container" style="position: relative;">
         <img src="#" alt="" class="popup__image">
-        <img src="./images/close.svg" alt="" class="popup__close popup__close-image">
+        <img src="<%=require('../images/close.svg').default%>" alt="" class="popup__close popup__close-image">
       </div>
     </div>
 
   </div>
-  <!-- <script src="./api.js"></script>
-  <script src="./card.js"></script>
-  <script src="./card-list.js"></script>
-  <script src="./popup.js"></script>
-  <script src="./popup-card.js"></script>
-  <script src="./popup-image.js"></script>
-  <script src="./user-info.js"></script>
-  <script src="./form-validator.js"></script> -->
   <script src="<%= htmlWebpackPlugin.files.js %>"></script>
 </body>
 
