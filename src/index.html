@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Mesto</title>
-  <link rel="stylesheet" href="./pages/index.css">
+  <link rel="stylesheet" href="<%=htmlWebpackPlugin.files.css %>">
 </head>
 
 <body>
@@ -81,15 +81,15 @@
     </div>
 
   </div>
-  <script src="src/card.js"></script>
-  <script src="src/api.js"></script>
-  <script src="src/card-list.js"></script>
-  <script src="src/popup.js"></script>
-  <script src="src/popup-card.js"></script>
-  <script src="src/popup-image.js"></script>
-  <script src="src/user-info.js"></script>
-  <script src="src/form-validator.js"></script>
-  <script src="src/script.js"></script>
+  <!-- <script src="./api.js"></script>
+  <script src="./card.js"></script>
+  <script src="./card-list.js"></script>
+  <script src="./popup.js"></script>
+  <script src="./popup-card.js"></script>
+  <script src="./popup-image.js"></script>
+  <script src="./user-info.js"></script>
+  <script src="./form-validator.js"></script> -->
+  <script src="<%= htmlWebpackPlugin.files.js %>"></script>
 </body>
 
 </html>

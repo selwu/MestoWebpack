@@ -1,6 +1,6 @@
 'use strict';
 
-(() => {
+  import "./style.css";
   const errorMessages = {
     valueMissing: 'Это обязательное поле',
     tooShort: 'Должно быть от 2 до 30 символов',
@@ -113,4 +113,3 @@
     .catch((err) => {
       console.log(err);
     });
-})();
