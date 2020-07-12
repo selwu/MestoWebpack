@@ -1,7 +1,13 @@
-'use strict';
-
-(() => {
-  const errorMessages = {
+import Api from './api.js';
+import Card from './card.js';
+import CardList from './card-list.js';
+import FormValidator from './form-validator.js';
+import Popup from './popup.js';
+import PopupCard from './popup-card.js';
+import PopupImage from './popup-image.js';
+import UserInfo from './user-info.js';
+import "./style.css";
+const errorMessages = {
     valueMissing: 'Это обязательное поле',
     tooShort: 'Должно быть от 2 до 30 символов',
     typeMismatch: 'Здесь должна быть ссылка',
@@ -113,4 +119,3 @@
     .catch((err) => {
       console.log(err);
     });
-})();

@@ -1,4 +1,4 @@
-class CardList {
+export default class CardList {
   constructor(container, createCard) {
     this.container = container;
     this.createCard = createCard;
@@ -10,7 +10,7 @@ class CardList {
   }
 
   render(cards) {
-      cards.slice(0, 4).forEach((card) => {
+      cards.forEach((card) => {
           this.addCard(card);
         })
   }
