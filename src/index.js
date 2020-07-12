@@ -1,12 +1,12 @@
-import Api from './api.js';
-import Card from './card.js';
-import CardList from './card-list.js';
-import FormValidator from './form-validator.js';
-import Popup from './popup.js';
-import PopupCard from './popup-card.js';
-import PopupImage from './popup-image.js';
-import UserInfo from './user-info.js';
-import "./style.css";
+import Api from './js/api.js';
+import Card from './js/card.js';
+import CardList from './js/card-list.js';
+import FormValidator from './js/form-validator.js';
+import Popup from './js/popup.js';
+import PopupCard from './js/popup-card.js';
+import PopupImage from './js/popup-image.js';
+import UserInfo from './js/user-info.js';
+import './style.css';
 const errorMessages = {
     valueMissing: 'Это обязательное поле',
     tooShort: 'Должно быть от 2 до 30 символов',
@@ -27,8 +27,9 @@ const errorMessages = {
   const buttonOpenerNewCard = document.querySelector('.user-info__button');
   const buttonCloserCard = document.querySelector('.popup__close-card');
   const imageBig = document.querySelector('.popup__image');
+  const serverUrl = NODE_ENV === 'deveopment' ? 'http://praktikum.tk/cohort11' : 'https://praktikum.tk/cohort11';
   const config = {
-    baseUrl: 'https://praktikum.tk/cohort11',
+    baseUrl: serverUrl,
     headers: {
       authorization: '7d95c706-9e8f-4c57-8114-78c17868a168',
       'Content-Type': 'application/json',

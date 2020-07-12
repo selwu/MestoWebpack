@@ -2,7 +2,7 @@
 
 #### Сервис для добавления фотографий различных мест
 
-##### version: 0.1.2
+##### version: 0.1.3
 
 https://selwu.github.io/MestoWebpack/
  
