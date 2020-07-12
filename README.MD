@@ -4,8 +4,23 @@
 
 ##### version: 0.1.3
 
+
 https://selwu.github.io/MestoWebpack/
+
+## Процесс установки:
+
+```bash
+# установка пакетов
+$ npm install
+
+# сборка под production или development с локальным сервером и hot reload
+$ npm run build
+$ npm run dev
+```
  
+## О проекте: 
+
+**Сервис для добавления фотографий различных мест**
  
 #### Стек: 
 * HTML5, CSS3(Flexbox + Grid), JavaScript ES6, БЭМ, Webpack
