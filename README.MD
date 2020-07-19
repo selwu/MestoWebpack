@@ -1,6 +1,9 @@
 # Mesto
 
-### version: 0.1.2
+#### Сервис для добавления фотографий различных мест
+
+##### version: 0.1.3
+
 
 https://selwu.github.io/MestoWebpack/
 
