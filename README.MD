@@ -5,7 +5,7 @@
 ##### version: 0.1.3
 
 
-https://selwu.github.io/MestoWebpack/
+ https://selwu.github.io/MestoWebpack/
 
 ## Процесс установки:
 
