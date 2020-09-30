@@ -27,7 +27,7 @@ const errorMessages = {
   const buttonOpenerNewCard = document.querySelector('.user-info__button');
   const buttonCloserCard = document.querySelector('.popup__close-card');
   const imageBig = document.querySelector('.popup__image');
-  const serverUrl = NODE_ENV === 'deveopment' ? 'http://praktikum.tk/cohort11' : 'https://praktikum.tk/cohort11';
+  const serverUrl = NODE_ENV === 'deveopment' ? 'http://praktikum.tk/cohort11' : 'https://nomoreparties.co/cohort11';
   const config = {
     baseUrl: serverUrl,
     headers: {
